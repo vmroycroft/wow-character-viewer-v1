@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC|Lato&display=swap');
+
+/* purgecss start ignore */
+@tailwind base;
+
+/* TODO move these styles somewhere else */
+.selectable:hover {
+	background-color: rgba(#000000, 0.15);
+}
+
+.selectable.selected {
+	background-color: rgba(#ffffff, 0.05);
+}
+
+.collapsed:not(.selected) {
+	display: none !important;
+}
+
+.backdrop-blur-dark {
+	background-color: rgba(#000000, 0.8);
+}
+.backdrop-blur-light {
+	background-color: rgba(#ffffff, 0.8);
+}
+@supports (backdrop-filter: blur(6px)) {
+	.backdrop-blur-dark {
+		background-color: rgba(#000000, 0.2);
+		backdrop-filter: blur(6px);
+	}
+	.backdrop-blur-light {
+		background-color: rgba(#ffffff, 0.1);
+		/* backdrop-filter: blur(5px); */
+	}
+}
+
+@tailwind components;
+
+/* purgecss end ignore */
+
+@tailwind utilities;
