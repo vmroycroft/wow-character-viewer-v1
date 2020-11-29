@@ -1,4 +1,4 @@
-# WoW Character Viewer (Common)
+# WoW Character Viewer
 
 ![Version](https://img.shields.io/badge/version-0.1.0-orange)
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
